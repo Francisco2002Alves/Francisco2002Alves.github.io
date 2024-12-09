@@ -1,0 +1,1013 @@
+/*COMUN TO EVERYPAGE*/
+/* Geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+/* Navbar personalizada */
+.navbar {
+    background-color: #5E0000;
+}
+
+.navbar-brand img {
+    width: 70px;
+}
+
+.navbar-brand .fw-bold {
+    white-space: nowrap;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700 !important;
+}
+
+/* Footer */
+.footer img {
+    width: 50px;
+}
+
+/*MAIN PAGE*/
+/* haney Section */
+.haney {
+    width: 100%;
+    height: 90vh;
+    background-image: url('main_page_imgs/devin_dream_haney.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.haney-overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.haney .container {
+    z-index: 2;
+}
+
+.haney-text {
+    max-width: 60%;
+}
+
+.haney-text p {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .haney {
+        height: 60vh;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .haney-text {
+        max-width: 90%;
+        text-align: center;
+    }
+
+    .logo-overlay {
+        display: none;
+    }
+}
+
+/* Motivational Section */
+.champ-txt {
+    color: #5E0000;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Latest News */
+.latest-news {
+    padding: 40px 20px;
+    background-color: #000000;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #5E0000;
+}
+
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.news-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.news-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-card h3 {
+    font-size: 1.5rem;
+    color: #5E0000;
+    margin: 15px;
+}
+
+.news-card p {
+    font-size: 1rem;
+    margin: 15px;
+    color: #333;
+}
+
+.btn-read-more {
+    display: block;
+    text-align: center;
+    background-color: #AD0000;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 1rem;
+    margin: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-read-more:hover {
+    background-color: #5E0000;
+}
+
+.modal-open {
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .news-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .news-card {
+        width: 90%;
+    }
+
+    .news-img {
+        height: 150px;
+    }
+
+    .news-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .news-card p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .news-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .news-card p {
+        font-size: 0.9rem;
+    }
+
+    .btn-read-more {
+        font-size: 0.95rem;
+        padding: 8px 0;
+    }
+}
+
+/* Testimonies Section */
+.testmonies {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.testmonies .section-title {
+    font-size: 2.5rem;
+    color: #5E0000;
+    margin-bottom: 20px;
+}
+
+.testmonies .section-description {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimony-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.testimony-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.testimony-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimony-card h3 {
+    font-size: 1rem;
+    color: #5E0000;
+    margin: 5px 0;
+}
+
+.testimony-card p {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Mike Punch Section */
+.mike_punch {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background: url('main_page_imgs/mike_punch/Mike_Punch.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: left;
+    padding: 0 5%;
+}
+
+.mike_punch-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.mike_punch-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.mike_punch-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: gold;
+}
+
+.mike_punch-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn-learn-more {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #AD0000;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-learn-more:hover {
+    background: #7a0000;
+}
+
+@media screen and (max-width: 768px) {
+    .mike_punch-content {
+        max-width: 90%;
+    }
+
+    .mike_punch-content h2 {
+        font-size: 2rem;
+    }
+
+    .mike_punch-content p {
+        font-size: 1rem;
+    }
+}
+
+/*Sponsors Section*/
+.sponsors {
+    margin-top: 80px;
+    /* Adiciona espaço antes da seção dos patrocinadores */
+    margin-bottom: 160px;
+    text-align: center;
+}
+
+.slider {
+    width: 100%;
+    border: 1px solid #7a0000;
+    height: var(--height);
+    overflow: hidden;
+    mask-image: linear-gradient(to right,
+            transparent,
+            #000,
+            transparent);
+}
+
+.slider .list {
+    display: flex;
+    width: 100%;
+    min-width: calc(var(--width)*var(--quantity));
+    position: relative;
+}
+
+.slider .list .item {
+    width: var(--width);
+    height: var(--height);
+    position: absolute;
+    animation: autoRun 10s linear infinite;
+    animation-delay: calc((10s /var(--quantity)) * (var(--position)- 1));
+}
+
+.slider .list .item img {
+    width: 100%;
+}
+
+@keyframes autoRun {
+    from {
+        left: calc(var(--width) * (var(--position) - 1));
+        /* Início baseado na posição */
+    }
+
+    to {
+        left: calc(var(--width) * (var(--position) - var(--quantity) - 1));
+        /* Saída calculada */
+    }
+}
+
+.slider:hover .item {
+    animation-play-state: paused !important;
+}
+
+/*SCHEDULE*/
+
+/* gervonta Section */
+.gervonta {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    /* Altura total da tela */
+    background-image: url('schedule_imgs/gervonta_murder_scene.png');
+    /* Caminho da imagem */
+    background-size: cover;
+    /* Cobre toda a área com a imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
+
+/* Sobreposição escura */
+.gervonta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Escurecimento similar ao da imagem */
+    z-index: 1;
+    /* Camada inferior ao conteúdo */
+}
+
+/* Conteúdo da gervonta */
+.gervonta-content {
+    display: flex;
+    /* Flexbox para alinhamento horizontal */
+    justify-content: space-between;
+    /* Espaço entre o texto e o logotipo */
+    align-items: center;
+    /* Alinhamento vertical */
+    position: relative;
+    z-index: 2;
+    /* Sobreposição acima da camada escura */
+    padding: 20px;
+    /* Margem interna */
+}
+
+/* Estilização do texto */
+.gervonta-text {
+    max-width: 60%;
+    /* Limita o texto a 60% da largura */
+    color: white;
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    margin-left: 20px;
+    /* Espaço à esquerda */
+}
+
+/* Estilização do título */
+.gervonta-text h2 {
+    font-size: 3rem;
+    /* Tamanho do título */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .gervonta-text {
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .gervonta-text h2 {
+        font-size: 2rem;
+        /* Reduz o tamanho do título */
+    }
+
+    .gervonta-text p {
+        font-size: 1rem;
+        /* Reduz o tamanho do texto */
+    }
+
+    .logo-overlay {
+        display: none;
+        /* Esconde o logotipo no mobile */
+    }
+
+    .gervonta-content {
+        flex-direction: column;
+        /* Empilha o texto e a imagem */
+        text-align: center;
+        /* Centraliza o conteúdo */
+    }
+
+    .gervonta {
+        height: 60vh;
+        /* Reduz a altura da imagem no mobile */
+    }
+
+    .btn-learn-more {
+        padding: 7px 14px;
+        /* Reduz o tamanho do botão */
+        font-size: 1rem;
+        /* Ajusta o tamanho da fonte do botão */
+    }
+}
+
+
+/*__________________________________________________________________________*/
+/* Schedule events */
+/* Adicionando um estilo extra para a seção */
+.fight-event {
+    transition: box-shadow 0.3s ease;
+}
+
+.fight-event:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos das imagens dos lutadores */
+.fighter-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #9e2a2b;
+    padding: 5px;
+}
+
+/* Botões de filtro */
+.filter-btn {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filter-btn.active {
+    background-color: #7c1d1d !important;
+    border-color: #7c1d1d !important;
+}
+
+.filter-btn:hover {
+    background-color: #9e2a2b !important;
+    border-color: #9e2a2b !important;
+}
+
+/* Localização da luta */
+.location {
+    font-size: 14px;
+    color: #777;
+}
+
+.text-schedule {
+    color: #5E0000;
+}
+
+/*CONTACT_US*/
+/* ali Section */
+.ali {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url('contact_imgs/ali.jpg');
+    /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.ali-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.ali-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+.ali-text h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.ali-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #dcdcdc;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+/* Contact Form Section */
+.form-label {
+    font-weight: bold;
+}
+
+.btn-submit {
+    background-color: #5E0000;
+    /* Cor bordô */
+    border: 2px solid #5E0000;
+    /* Borda de cor bordô */
+    border-radius: 50px;
+    /* Bordas circulares */
+    color: white;
+    /* Cor do texto */
+    font-weight: bold;
+    padding: 12px 20px;
+    /* Ajuste no padding para melhorar a aparência */
+    transition: background-color 0.3s, border-color 0.3s;
+    /* Suaviza a transição das cores */
+}
+
+.btn-submit:hover {
+    background-color: #3D0000;
+    /* Cor bordô mais escura no hover */
+    border-color: #3D0000;
+    /* Borda mais escura no hover */
+}
+
+/*champions*/
+/* belt Section */
+.belt {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url('champions_imgs/belts.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.belt-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.belt-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+.belt-text h2 {
+    font-size: 3rem;
+}
+
+@media (max-width: 768px) {
+    .belt {
+        height: 60vh;
+        /* Reduz a altura em telas menores */
+    }
+
+    .belt-text h2 {
+        font-size: 2rem;
+    }
+
+    .belt-text p {
+        font-size: 1rem;
+    }
+}
+
+/* Champions Section */
+.champions-section {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.champions-section h2 {
+    font-size: 2rem;
+    color: #900;
+}
+
+.organizations {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os botões ocupem novas linhas em telas pequenas */
+    justify-content: center;
+    gap: 10px;
+}
+
+.organizations button {
+    background-color: #900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.organizations button:hover {
+    background-color: #700;
+}
+
+.champions {
+    display: flex;
+    flex-wrap: wrap;
+    /* Adapta o layout para várias linhas em telas pequenas */
+    justify-content: center;
+    gap: 20px;
+}
+
+.champion-card {
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    /* Largura fixa para cartões */
+}
+
+.champion-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .champion-card {
+        width: 100%;
+        /* Os cartões ocupam 100% da largura em telas menores */
+    }
+
+    .champions {
+        flex-direction: column;
+        /* Disposição vertical em telas pequenas */
+        align-items: center;
+    }
+}
+
+/* Pound-for-Pound Section */
+.pound-for-pound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fff7e5;
+}
+
+.pound-for-pound h2 {
+    font-size: 2rem;
+    color: #b87333;
+    margin-bottom: 30px;
+}
+
+.featured-champion {
+    display: flex;
+    flex-wrap: wrap;
+    /* Adapta o layout em telas pequenas */
+    gap: 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-champion img {
+    width: 100%;
+    max-width: 300px;
+    /* Tamanho máximo da imagem */
+    height: auto;
+    border-radius: 10px;
+}
+
+.featured-champion .text {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    .featured-champion {
+        flex-direction: column;
+        /* Disposição vertical em telas menores */
+        text-align: center;
+    }
+}
+
+/*Legends*/
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url('legends_imgs/tyson_lengend.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-text h3 {
+    font-size: 1.5rem;
+    color: #ffd700;
+    /* Dourado para destaque */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #dcdcdc;
+    /* Cinza claro */
+    margin: 0 auto;
+    max-width: 800px;
+    /* Limita a largura do texto para uma melhor leitura */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh;
+        /* Reduz a altura em telas menores */
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+/*_____________________________________________________________________________*/
+
+/* Childhood Section */
+.childhood-section {
+    padding: 20px 0;
+}
+
+.childhood-section .row img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.childhood-section .row img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Responsividade e alinhamento */
+.childhood-section .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.childhood-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.childhood-section img {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/*early career*/
+.early-career {
+    background-color: #800000;
+    /* Vermelho escuro */
+    color: #fff;
+    /* Texto branco */
+    padding: 2rem 1rem;
+}
+
+.early-career h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: gold;
+}
+
+.early-career p {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.early-career img {
+    border-radius: 8px;
+    /* Cantos arredondados */
+    max-width: 100%;
+    /* Ajusta-se ao tamanho da coluna */
+}
+
+/*_____________________________________________________________________________*/
+/* Custom background color for the section */
+.bg-custom {
+    background-color: #800000;
+    /* Dark Red */
+}
+
+/*Today-section*/
+.today-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.carousel-inner {
+    max-height: 600px;
+    /* Limita a altura do carrossel */
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    /* Ajusta as imagens dentro do limite */
+    object-fit: contain;
+    /* As imagens serão redimensionadas mantendo a proporção */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+    /* Cor preta para os controles do carrossel */
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .lead {
+        font-size: 0.9rem;
+        /* Reduz o tamanho da fonte em telas pequenas */
+    }
+
+    .carousel-inner img {
+        height: 250px;
+        /* Ajuste da altura das imagens para telas pequenas */
+    }
+
+    h2 {
+        font-size: 2rem;
+        /* Ajuste no tamanho do título em telas pequenas */
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-inner img {
+        height: 200px;
+        /* Ajuste do tamanho do carrossel em dispositivos móveis */
+    }
+}

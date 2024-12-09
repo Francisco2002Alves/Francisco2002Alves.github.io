@@ -1,0 +1,312 @@
+/* Geral */ 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/*_____________________________________________________________________________*/
+
+/*Header*/
+/* Navbar personalizada */
+.navbar {
+    background-color: #5E0000; /* Cor de fundo personalizada */
+}
+
+/* Navbar branding */
+.navbar-brand img {
+    width: 70px;
+}
+
+.navbar-brand .fw-bold {
+    white-space: nowrap;
+}
+
+/* Link hover effect */
+.navbar-nav .nav-link {
+    color: white !important; /* Cor branca nos links */
+    transition: color 0.3s ease; /* Transição suave para o hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700 !important; /* Amarelo no hover */
+}
+/*_____________________________________________________________________________*/
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-image: url('legends_imgs/tyson_lengend.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-text h3 {
+    font-size: 1.5rem;
+    color: #ffd700; /* Dourado para destaque */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.hero-text h1 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #dcdcdc; /* Cinza claro */
+    margin: 0 auto;
+    max-width: 800px; /* Limita a largura do texto para uma melhor leitura */
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: 60vh; /* Reduz a altura em telas menores */
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+}
+
+/*_____________________________________________________________________________*/
+
+/* Childhood Section */
+.childhood-section {
+    padding: 20px 0;
+}
+
+.childhood-section .row img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.childhood-section .row img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Responsividade e alinhamento */
+.childhood-section .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.childhood-section p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.childhood-section img {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/*early career*/
+.early-career {
+    background-color: #800000; /* Vermelho escuro */
+    color: #fff; /* Texto branco */
+    padding: 2rem 1rem;
+}
+.early-career h2 {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color:gold;
+}
+.early-career p {
+    line-height: 1.8;
+    text-align: justify;
+}
+.early-career img {
+    border-radius: 8px; /* Cantos arredondados */
+    max-width: 100%; /* Ajusta-se ao tamanho da coluna */
+}
+
+/*_____________________________________________________________________________*/
+
+/* Table Section */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #5E0000; /* Cor de fundo similar à navbar */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.win {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.loss {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.nc {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+a {
+    color: #FFD700; /* Dourado nos links */
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+table caption {
+    caption-side: top;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #800000;
+}
+
+/* Custom background color for the section */
+.bg-custom {
+    background-color: #800000; /* Dark Red */
+}
+
+/*Today-section*/
+.today-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .carousel-inner {
+    max-height: 600px; /* Limita a altura do carrossel */
+  }
+  
+  .carousel-inner img {
+    width: 100%;
+    height: 100%; /* Ajusta as imagens dentro do limite */
+    object-fit: contain; /* As imagens serão redimensionadas mantendo a proporção */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: #000; /* Cor preta para os controles do carrossel */
+  }
+  
+  /* Responsividade para telas menores */
+  @media (max-width: 768px) {
+    .lead {
+      font-size: 0.9rem; /* Reduz o tamanho da fonte em telas pequenas */
+    }
+  
+    .carousel-inner img {
+      height: 250px; /* Ajuste da altura das imagens para telas pequenas */
+    }
+  
+    h2 {
+      font-size: 2rem; /* Ajuste no tamanho do título em telas pequenas */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-inner img {
+      height: 200px; /* Ajuste do tamanho do carrossel em dispositivos móveis */
+    }
+  }
+
+/*____________________________________________________________________________*/
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800000; /* Fundo vermelho escuro */
+    color: #fff; /* Texto branco */
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-left {
+    font-weight: bold;
+}
+
+.footer-center {
+    font-style: italic;
+    color: #d4af37; /* Dourado */
+    text-align: center;
+    flex: 1; /* Ocupa espaço para centralizar */
+}
+
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}  
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 120px; /* Aumente o padding se necessário para telas pequenas */
+    }
+}
+  

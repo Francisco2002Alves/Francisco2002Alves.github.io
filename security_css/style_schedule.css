@@ -1,0 +1,199 @@
+/* Geral */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/*Header*/
+/* Navbar personalizada */
+.navbar {
+    background-color: #5E0000; /* Cor de fundo personalizada */
+}
+
+/* Navbar branding */
+.navbar-brand img {
+    width: 70px;
+}
+
+.navbar-brand .fw-bold {
+    white-space: nowrap;
+}
+
+/* Link hover effect */
+.navbar-nav .nav-link {
+    color: white !important; /* Cor branca nos links */
+    transition: color 0.3s ease; /* Transição suave para o hover */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #FFD700 !important; /* Amarelo no hover */
+}
+/*_____________________________________________________________________________*/
+/* gervonta Section */
+.gervonta {
+    position: relative;
+    width: 100%;
+    height: 90vh; /* Altura total da tela */
+    background-image: url('schedule_imgs/gervonta_murder_scene.png'); /* Caminho da imagem */
+    background-size: cover; /* Cobre toda a área com a imagem */
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+}
+
+/* Sobreposição escura */
+.gervonta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Escurecimento similar ao da imagem */
+    z-index: 1; /* Camada inferior ao conteúdo */
+}
+
+/* Conteúdo da gervonta */
+.gervonta-content {
+    display: flex; /* Flexbox para alinhamento horizontal */
+    justify-content: space-between; /* Espaço entre o texto e o logotipo */
+    align-items: center; /* Alinhamento vertical */
+    position: relative;
+    z-index: 2; /* Sobreposição acima da camada escura */
+    padding: 20px; /* Margem interna */
+}
+
+/* Estilização do texto */
+.gervonta-text {
+    max-width: 60%; /* Limita o texto a 60% da largura */
+    color: white;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-left: 20px; /* Espaço à esquerda */
+}
+
+/* Estilização do título */
+.gervonta-text h2 {
+    font-size: 3rem; /* Tamanho do título */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .gervonta-text {
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .gervonta-text h2 {
+        font-size: 2rem; /* Reduz o tamanho do título */
+    }
+
+    .gervonta-text p {
+        font-size: 1rem; /* Reduz o tamanho do texto */
+    }
+
+    .logo-overlay {
+        display: none; /* Esconde o logotipo no mobile */
+    }
+
+    .gervonta-content {
+        flex-direction: column; /* Empilha o texto e a imagem */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    .gervonta {
+        height: 60vh; /* Reduz a altura da imagem no mobile */
+    }
+    
+    .btn-learn-more {
+        padding: 7px 14px; /* Reduz o tamanho do botão */
+        font-size: 1rem; /* Ajusta o tamanho da fonte do botão */
+    }
+}
+
+
+/*__________________________________________________________________________*/
+/* Schedule events */
+/* Adicionando um estilo extra para a seção */
+.fight-event {
+    transition: box-shadow 0.3s ease;
+}
+
+.fight-event:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos das imagens dos lutadores */
+.fighter-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #9e2a2b;
+    padding: 5px;
+}
+
+/* Botões de filtro */
+.filter-btn {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.filter-btn.active {
+    background-color: #7c1d1d !important;
+    border-color: #7c1d1d !important;
+}
+
+.filter-btn:hover {
+    background-color: #9e2a2b !important;
+    border-color: #9e2a2b !important;
+}
+
+/* Localização da luta */
+.location {
+    font-size: 14px;
+    color: #777;
+}
+
+.text-schedule{
+    color:#5E0000;
+}
+
+/*__________________________________________________________________________*/
+/* Footer Section */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #800000; /* Fundo vermelho escuro */
+    color: #fff; /* Texto branco */
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-left {
+    font-weight: bold;
+}
+
+.footer-center {
+    font-style: italic;
+    color: #d4af37; /* Dourado */
+    text-align: center;
+    flex: 1; /* Ocupa espaço para centralizar */
+}
+
+.footer-right a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
